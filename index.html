@@ -32,16 +32,13 @@
     <!-- Cria um formulário na página -->
     <form> 
     
-    <!-- Cria uma caixa de texto para inserir o primeiro número -->
+    <!-- Cria uma caixa de texto para inserir os Valores -->
     peso <input 
-        type="text" 
-        width="30"
-        height="50"
-        id="peso"><br>
+        type="text" id="peso"><br>
     
-    <!-- Cria uma caixa de texto para inserir o segundo número -->
     altura <input type="text"id = "altura"><br><br>
     
+    <!-- Caixa de Seleção de Genero-->
     <select id="genero">
         <option> Qual Seu Genero?</option>
         <option id="M"> Masculino</option>
@@ -51,7 +48,7 @@
     <br><br> 
     
     <!-- Cria um botão para executar o caulo de Imc-->
-    <button type="button" onclick="calcularIMC()" id="resulIMC"> CalcularIMC</button><br>
+    <button type="button" onclick="calcularIMC()" id="CalcIMC"> CalcularIMC</button><br>
     
 
     <!-- Mostra a palavra "RESULTADO" seguida do campo de texto de resposta, que é somente leitura -->
@@ -101,26 +98,26 @@ function calcularIMC(){
         if (Genero === "Masculino") {
                 // Executa a função de cálculo do IMC para o homem
                 resultado = IMC_H(peso, altura);
+                
+                document.getElementById("resulIMC").value = resultado;
             } 
             
             else if (Genero === "Feminino") {
                 // Executa a função de cálculo do IMC para o homem
                 resultado = IMC_F(peso, altura);
+                document.getElementById("resulIMC").value = resultado;
             } 
             
             else {
                 alert("Por favor, selecione o gênero.");
             }
 
-       
-       
-
         if(isNaN(resultado)){
             alert("Houve um erro ao calcular o IMC.");
             return 0; // retorna 0 para indicar que a função não funcionou corretamente
         }
 
-        alert(resultado);
+         
         return 1;
 
 } </script>
