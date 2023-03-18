@@ -76,27 +76,33 @@ function calcularIMC(){
                 document.getElementById("resulIMC").value = resultado;
             
                 if (resultado = 18,5) {
-                    document.getElementById("resulIMC").value = resultado + "Magreza";
+                    document.getElementById("resulIMC").value = resultado;
+                    alert("Magreza");
                 }
 
                 else if (resultado > 18,5 || resultado < 24,9) {
-                    document.getElementById("resulIMC").value = resultado + "Normal";
+                    document.getElementById("resulIMC").value = resultado;
+                    alert("Normal");
                 }
 
                 else if (resultado > 25 || resultado < 29,9) {
-                    document.getElementById("resulIMC").value = resultado + "Sobrepeso";
+                    document.getElementById("resulIMC").value = resultado;
+                    alert("Sobrepeso");
                 }
 
                 else if (resultado > 30  || resultado < 34,9) {
-                    document.getElementById("resulIMC").value = resultado + "Obesidade grau I";
+                    document.getElementById("resulIMC").value = resultado;
+                    alert("Obesidade grau I");
                 }
 
                 else if (resultado > 35   || resultado < 39,9) {
-                    document.getElementById("resulIMC").value = resultado + "Obesidade grau II";
+                    document.getElementById("resulIMC").value = resultado;
+                    alert("Obesidade grau II");
                 }
 
                 else if (resultado > 40) {
-                    document.getElementById("resulIMC").value = resultado + "Obesidade grau III";
+                    document.getElementById("resulIMC").value = resultado;
+                    alert("Obesidade grau III");
                 }
 
             
