@@ -13,6 +13,7 @@ h1 {
 
 /* Estiliza o formulário */
 form {
+    font-size: medium;
     margin-top: 50px;
     text-align: center;
 }
